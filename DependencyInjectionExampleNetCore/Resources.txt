@@ -1,0 +1,11 @@
+﻿Transient operations are always different, a new instance is created with every retrieval of the service.
+Scoped operations change only with a new scope, but are the same instance within a scope.
+Singleton operations are always the same, a new instance is only created once.
+
+
+
+IServiceCollection, the collection where we can register details about service interface, its concrete 
+implementation and the lifetime of the service, typically while the application is bootstrapping.
+
+IServiceProvider, which acts as container responsible for creating/maintaining/disposing the services registered 
+using IServiceCollection
